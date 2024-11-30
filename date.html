@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Date Time</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h2>Indian Standard Time</h2>
+        <button onclick="date()">Click Me</button>
+        <p id = 'date'></p>
+        <p id="text"></p>
+        <script>
+            function date(){
+                document.getElementById('date').innerHTML = Date();
+                document.getElementById('text').innerHTML = "Hurrah you got date and time";
+            }
+        </script>
+    </body>
+</html>
