@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Project</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body,html{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        h2{
+            font-size: 300%;
+        }
+        .container{
+            background-color: pink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .box{
+            background-color: beige;
+            text-align: center;
+            padding: 10px 100px;
+            border-radius: 20px;
+        }
+        p{
+            font-size: 400%;
+        }
+        button{
+            background-color: skyblue;
+            padding: 20px 50px;
+            border-radius: 20px;
+        }
+        button:hover{
+            background-color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Counter Guys !!!!</h2>
+            <p id="text">0</p>
+            <button onclick="decr()">Decrement</button>
+            <button onclick="incr()">Increment</button><br><br>
+            <button onclick="res()">Reset</button>
+        </div>
+    </div>
+
+    <script>
+        let counter  = 0; //globally declare
+        function incr(){
+            document.getElementById("text").innerHTML = ++counter;
+        }
+        function decr(){
+            document.getElementById("text").innerHTML = --counter;
+        }
+        function res(){
+            document.getElementById("text").innerHTML = 0;
+            conter = 0;
+        }
+    </script>
+</body>
+</html>
