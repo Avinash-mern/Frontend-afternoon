@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbie Calculator</title>
+    <style>
+        body,html{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .container{
+            height: 100%;
+            background-color: pink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            background-color: rgb(230, 160, 218);
+            padding: 30px 100px;
+            border-radius: 20px;
+
+        }
+        button{
+            background-color: pink;
+            padding: 15px;
+            border-radius: 50px;
+            font-size: 150%;
+        }
+        button:hover{
+            background-color: white;
+        }
+        input{
+            padding: 20px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Barbie Calculator!!!</h2>
+            <input id = "num1" type="number" placeholder="Enter Num 1"><br><br>
+            <input id = "num2" type="number" placeholder="Enter Num 2"><br><br>
+            <button onclick="sum()">+</button>
+            <button onclick="diff()">-</button>
+            <button onclick="mult()">x</button>
+            <button onclick="div()">/</button>
+        </div>
+    </div>
+
+    <script>
+        function sum(){
+            const a = parseInt(document.getElementById("num1").value);
+            const b = parseInt(document.getElementById("num2").value);
+            const sum = a + b;
+            alert(sum);
+        }
+        function diff(){
+            const a = parseInt(document.getElementById("num1").value);
+            const b = parseInt(document.getElementById("num2").value);
+            const diff = a - b;
+            alert(diff);
+        }
+        function mult(){
+            const a = parseInt(document.getElementById("num1").value);
+            const b = parseInt(document.getElementById("num2").value);
+            const mult = a * b;
+            alert(mult);
+        }
+        function div(){
+            const a = parseInt(document.getElementById("num1").value);
+            const b = parseInt(document.getElementById("num2").value);
+            const div = a / b;
+            alert(div);
+        }
+    </script>
+
+</body>
+</html>
